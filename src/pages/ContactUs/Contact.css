@@ -10,3 +10,6 @@
   opacity: 0.9;
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
+.w-100-custom {
+  width: 100%;
+}

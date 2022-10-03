@@ -1,7 +1,7 @@
 import React from 'react';
-import { RiEqualizerLine } from 'react-icons/ri';
 import { BiSearchAlt2 } from "react-icons/bi";
 import { FaSearchLocation } from "react-icons/fa";
+import { RiEqualizerLine } from 'react-icons/ri';
 import { jobTypeList } from '../../../data';
 
 const Sidebar = ({ searchHandle, categoryHandle, jobTypeHandle, locationHandle, cat }) => {
@@ -20,7 +20,7 @@ const Sidebar = ({ searchHandle, categoryHandle, jobTypeHandle, locationHandle, 
         <div className='flex items-center '>
           <BiSearchAlt2 className='text-xl mr-1' />
           <input
-            className='border border-slate-800 rounded-md py-1 pl-1 hover:border-primary duration-300 '
+            className='border border-slate-800 rounded-md py-1 w-100-custom pl-1 hover:border-primary duration-300 '
             type='text'
             placeholder='React developer'
             onChange={searchHandle}
@@ -33,7 +33,7 @@ const Sidebar = ({ searchHandle, categoryHandle, jobTypeHandle, locationHandle, 
         <div className='flex items-center '>
           <FaSearchLocation className='text-md mr-2' />
           <input
-            className='border border-slate-800 rounded-md py-1 pl-1 hover:border-primary duration-300 '
+            className='border border-slate-800 w-100-custom rounded-md py-1 pl-1 hover:border-primary duration-300 '
             type='text'
             placeholder='e.g USA'
 

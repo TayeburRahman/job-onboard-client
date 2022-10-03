@@ -1,12 +1,12 @@
 import React from 'react';
-import Footer from '../../Shared/Footer/Footer';
 import { useForm } from 'react-hook-form';
-import './Contact.css'
-import { contactData, teamMemberData } from '../../data';
-import { BASE_API } from '../../config';
-import Swal from 'sweetalert2';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { TbWorldDownload } from 'react-icons/tb';
+import Swal from 'sweetalert2';
+import { BASE_API } from '../../config';
+import { contactData, teamMemberData } from '../../data';
+import Footer from '../../Shared/Footer/Footer';
+import './Contact.css';
 
 const Contact = () => {
   const { register, formState: { errors }, handleSubmit, reset } = useForm();
@@ -125,13 +125,11 @@ const Contact = () => {
                 <p className='lg:text-lg'>Interested  our service? Talk to our experts today .</p>
                 <p className='lg:text-lg'>Get in touch with our support</p>
               </div>
-              <div className='space-y-2  md:text-xl'>
-                <p>Nazmul : +8801778992817 </p>
-                <p>Arefin : +88011537249869 </p>
-                <p>Shawon : +8801957543699 </p>
-                <p>Kiron : +8801855535091  </p>
-                <p>Sajal : +8801571117363 </p>
-                <p>Emtiaz : +8801568194230 </p>
+              <div className='space-y-2  md:text-xl'> 
+                <p>Tayebur : +8801732917294 </p>
+                <p>Kiron : +880185553509  </p>
+                <p>Sajal : +880157111736 </p>
+                <p>Emtiaz : +880156819423 </p>
               </div>
             </div>
           </div>
