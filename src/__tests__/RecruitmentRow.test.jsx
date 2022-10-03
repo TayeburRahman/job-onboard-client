@@ -21,6 +21,14 @@ describe("Candidate data render", () => {
     })
 })
 
+// test("handle onClick", () => {
+//     const onClick = jest.fn();
+//     render(<RecruitmentRow onClick={onClick} title="show detail" />);
+//     const buttonElement = screen.getByText(/Details/i);
+//     fireEvent.click(buttonElement);
+//     expect(onClick).toHaveBeenCalledTimes(6)
+// });
+
 test("handle onClick", () => {
     const onClick = jest.fn();
     render(<RecruitmentRow onClick={onClick} title="show detail" />);

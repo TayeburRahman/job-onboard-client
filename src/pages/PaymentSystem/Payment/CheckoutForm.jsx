@@ -1,11 +1,10 @@
-import React, { useState } from "react";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
-import { useEffect } from "react";
-import { BASE_API } from "../../../config";
-import Swal from "sweetalert2";
+import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import Loading from "../../../components/Loading/Loading";
+import Swal from "sweetalert2";
 import auth from "../../../Auth/Firebase/Firebase.init";
+import Loading from "../../../components/Loading/Loading";
+import { BASE_API } from "../../../config";
 
 const CheckoutForm = ({ paymentDetails }) => {
   const stripe = useStripe();
@@ -18,8 +17,6 @@ const CheckoutForm = ({ paymentDetails }) => {
   
 
   const { price } = paymentDetails;
-
-
 
   useEffect(() => {
     fetch(`${BASE_API}/create-payment-intent`, {
@@ -57,12 +54,7 @@ const CheckoutForm = ({ paymentDetails }) => {
       type: "card",
       card,
     });
-    // if (error) {
-    //   setCardError(error.message);
-    // }
-    // else{
-    //   setCardError("");
-    // }
+   
     setCardError(error?.message || "");
     setSuccess("");
 
@@ -76,14 +68,7 @@ const CheckoutForm = ({ paymentDetails }) => {
           },
         },
       });
-    // set error
-    // if (intentError) {
-    //   setCardError(intentError?.message);
-    // } else {
-    //   setCardError("");
-    //   setTransactionId(paymentIntent.id);
-    //   setSuccess("Congratulation! 🎉 Your Payment is success. ");
-    // }
+ 
 
     if (intentError) {
       const Toast = Swal.mixin({

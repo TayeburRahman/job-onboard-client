@@ -1,8 +1,8 @@
 import { signOut } from "firebase/auth";
 import toast from "react-hot-toast";
 import { Navigate } from "react-router-dom";
-import auth from "../Firebase/Firebase.init";
 import useAdmin from "../../hooks/useAdmin";
+import auth from "../Firebase/Firebase.init";
 
 const RequireAdmin = ({ children }) => {
   const [isAdmin, loading] = useAdmin();
@@ -18,5 +18,6 @@ const RequireAdmin = ({ children }) => {
   }
   return children;
 };
+
 
 export default RequireAdmin;

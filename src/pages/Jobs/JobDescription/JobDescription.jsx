@@ -20,13 +20,9 @@ const JobDescription = () => {
   const [admin] = useAdmin(user);
   const [hr] = useHrManager(user);
   const location = useLocation();
-  // const { appliedJobs, isLoading } = useAppliedJobs([]);
-  // console.log(appliedJobs)
-  //Handle Modal Disable When Job Already Applied
+ 
   const { isLoading, appliedJobs } = useSelector((state) => state.appliedJobs);
   const [alreadyApplied, setAlreadyApplied] = useState(false);
-
-  // console.log(exists)
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -46,8 +42,7 @@ const JobDescription = () => {
       }
     }
   }, [appliedJobs, jobId, user]);
-  // console.log(alreadyApplied);
-
+ 
   // console.log(job)
 
   const guestNavigate = () => {

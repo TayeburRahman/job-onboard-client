@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from "@testing-library/react"
+import { fireEvent, render, screen } from "@testing-library/react";
 import HrJobRow from "../Pages/ManageDashboard/HrJob/HrJobRow";
 
 test("editJobs button modal", () => {
@@ -11,7 +11,6 @@ test("editJobs button modal", () => {
 
     expect(divElement).toHaveTextContent("modal is open")
 });
-
 
 test("handle Update Now button", () => {
     const onClick = jest.fn();

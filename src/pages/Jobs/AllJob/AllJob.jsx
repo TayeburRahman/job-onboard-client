@@ -34,6 +34,7 @@ const AllJob = () => {
   }
 
   const jobTypeHandle = (e) => {
+    // job type and checking
     const query = e.target.value;
     const check = e.target.checked;
 
@@ -53,6 +54,7 @@ const AllJob = () => {
     }
 
   }
+
   const locationHandle = (e) => {
     const query = e.target.value;
     if (query) {

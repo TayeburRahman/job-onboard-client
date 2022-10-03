@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 // import pricingBg from "../../Assets/images/pricing/pattern.svg";
-import Footer from "../../../Shared/Footer/Footer";
-import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { BASE_API } from "../../../config";
+import Footer from "../../../Shared/Footer/Footer";
 
 const Pricing = () => {
   const navigate = useNavigate();
@@ -21,8 +21,7 @@ const Pricing = () => {
       .then((data) => setPayment(data));
   }, []);
 
-  // const priceFreeN = payment[0].price;
-  // console.log(priceFreeN);
+ 
 
   const priceFree = payment[0]?.price;
   const priceStandard = payment[1]?.price;
@@ -44,9 +43,7 @@ const Pricing = () => {
           </button>
         </div>
       </div>
-      {/* <div className="w-full h-28">
-        <img className="" src={pricingBg} alt="" />
-      </div> */}
+      
       {/* toast  */}
 
       {/* pricing section  */}

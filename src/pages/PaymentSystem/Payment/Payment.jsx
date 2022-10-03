@@ -1,10 +1,10 @@
+import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { BASE_API } from "../../../config";
 import visa from "../../Assets/images/payment/Visa-icon.png";
 import CheckoutForm from "./CheckoutForm";
-import { Elements } from "@stripe/react-stripe-js";
 const stripePromise = loadStripe(
   "pk_test_51L1PV2GTjQFJmthfZb1lh0BvUivcqdcBSncRDHe4E0xVhweALHl42jEK8J8b7wEsUvUQ32eCPfaeUe7oAUuy832i00CuXFquFK"
 );
@@ -70,9 +70,7 @@ const Payment = () => {
               <CheckoutForm paymentDetails={paymentDetails} />
             </Elements>
           </div>
-          {/* <div className="c-actions">
-            <button className="btn btn-primary w-full">Make a Payment</button>
-          </div> */}
+      
         </div>
       </div>
     </div>

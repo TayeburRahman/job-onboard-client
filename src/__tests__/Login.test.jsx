@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from "@testing-library/react"
+import { fireEvent, render, screen } from "@testing-library/react";
 import Login from "../Pages/Authentication/Login/Login";
 
 
@@ -25,6 +25,7 @@ test("error should be displayed", () => {
     const errorEl = screen.getByTestId("errors.email.message");
     expect(errorEl).toBeVisible()
 })
+
 
 test("require should not be needed when input exist", () => {
     render(<Login />);

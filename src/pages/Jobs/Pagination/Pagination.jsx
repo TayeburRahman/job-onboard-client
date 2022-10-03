@@ -39,8 +39,8 @@ const Pagination = ({ pageHandle, page, lastPage }) => {
                             >
                                 {3}
                             </button>
-                        }
-                        {/* ********************** */}
+                        } 
+                        
                         {
                             // CASE: 04
                             page > 5 &&

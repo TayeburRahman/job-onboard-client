@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import auth from '../../../Auth/Firebase/Firebase.init';
-import { BASE_API } from '../../../config';
 import Loading from '../../../components/Loading/Loading';
+import { BASE_API } from '../../../config';
 import useCandidateInfo from '../../../hooks/useCandidateInfo';
-import { useNavigate } from 'react-router-dom';
 
 const ApplicantModal = ({ job }) => {
   const { register, formState: { errors }, handleSubmit, reset } = useForm();
@@ -33,7 +33,6 @@ const ApplicantModal = ({ job }) => {
   // console.log(displayName);
   const email = auth?.currentUser?.email
 
-  // console.log(job);
   const { category, companyName, hrEmail, hrName, jobTitle } = job
   const jobPostId = job?._id
   const createdDate = job?.createdDate
