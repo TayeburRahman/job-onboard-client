@@ -1,0 +1,40 @@
+.nameTitle {
+  transition: 0.1s;
+}
+.basicInfo {
+  background: #000000a3;
+  visibility: hidden;
+  transition: 0.2s;
+}
+.darkInput:focus {
+  background: #01152e !important;
+}
+.modalContainer input:focus,
+textarea:focus,
+select:focus {
+  outline-style: dotted;
+}
+hr {
+  border-style: dashed;
+}
+.employeeContainer:hover .basicInfo {
+  visibility: visible;
+  top: 0;
+}
+
+.employeeContainer:hover .nameTitle {
+  visibility: hidden;
+}
+/* Employee Details */
+.employeeAllDetails {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .employeeAllDetails {
+    grid-template-columns: 1fr;
+    column-gap: 3rem;
+  }
+}
