@@ -18,20 +18,14 @@ const WelcomeDashboard = () => {
   const [user] = useAuthState(auth);
   const [admin, adminLoading] = useAdmin(user);
   const [hr, hrLoading] = useHrManager(user);
-  // console.log(hr);
-
-  // const { data } = useEmployeeInfo();
-  // const allEmployeDetails = data?.data;
+ 
   const { allEmployeDetails } = useSelector((state) => state.allEmployeDetails);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchAllEmployeDetails());
   }, [dispatch]);
 
-  // const { data } = useEmployeeInfo();
-  // const allEmployeDetails = data?.data;
-
-  // const [hrJobs] = useHrJob();
+ 
 
   const { hrJobs } = useSelector((state) => state.hrJobs);
 
