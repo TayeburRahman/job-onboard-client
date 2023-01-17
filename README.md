@@ -1,7 +1,6 @@
 # A Job Recruitment Website Built with React and Redux.
 
-#### Developed by: <a href="https://github.com/TayeburRahman" target="_blank">Tayebur</a>, <a href="https://github.com/" target="_blank">Emtiaz</a>, <a href="https://github.com/" target="_blank">Sajal</a>, <a href="https://github.com/" target="_blank">Kiron</a>. <br> <br>
-
+ 
 ## Project URL – <a href="https://job-onboard-client.web.app/" rel="noopener" target="_blank">Job OnBoard</a>
 
 #### Hr Credential : endgame@gmail.com Password : 12345678
