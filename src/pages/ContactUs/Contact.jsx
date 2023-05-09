@@ -3,9 +3,9 @@ import { useForm } from 'react-hook-form';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { TbWorldDownload } from 'react-icons/tb';
 import Swal from 'sweetalert2';
+import Footer from '../../Shared/Footer/Footer';
 import { BASE_API } from '../../config';
 import { contactData, teamMemberData } from '../../data';
-import Footer from '../../Shared/Footer/Footer';
 import './Contact.css';
 
 const Contact = () => {
@@ -127,9 +127,8 @@ const Contact = () => {
               </div>
               <div className='space-y-2  md:text-xl'> 
                 <p>Tayebur : +8801732917294 </p>
-                <p>Kiron : +880185553509  </p>
-                <p>Sajal : +880157111736 </p>
-                <p>Emtiaz : +880156819423 </p>
+                <p>Sadheen : +880185553509  </p>
+                <p>Sayma : +880157111736 </p> 
               </div>
             </div>
           </div>
@@ -170,6 +169,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <h2 className="text-lg font-bold">{member?.name}</h2>
+                <h4 className="text-lg font-bold">{member?.id}</h4>
                 <div className='flex justify-evenly pt-5'>
                   <a className='text-2xl' href={member?.linkedinUrl} target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
                   <a className='text-2xl' href={member?.githuburl} target="_blank" rel="noopener noreferrer"><FaGithub /></a>

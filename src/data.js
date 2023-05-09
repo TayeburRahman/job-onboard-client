@@ -107,7 +107,7 @@ export const contactData = [
 export const teamMemberData = [
    
   {
-    id: 1113,
+    id: 1182556,
     name: 'Tayebur Rahman',
     photoUrl: 'https://i.ibb.co/DG4Mwx6/latest-1.png',
     linkedinUrl: 'https://www.linkedin.com/in/tayebur-rahman-95025b1b8/',
@@ -115,29 +115,21 @@ export const teamMemberData = [
     portfolioUrl: 'https://tayeburrahman-site-5f976.web.app'
   },
   {
-    id: 1114,
-    name: 'Shawon Mondal Gopal',
-    photoUrl: 'https://i.ibb.co/mydD3QS/Shawon.jpg',
+    id: 1192776,
+    name: 'MD Sadheen',
+    photoUrl: 'https://i.ibb.co/jGdZjqF/342056983-140232485696732-3608874202082726222-n.jpg',
     linkedinUrl: ' ',
     githuburl: ' ',
     portfolioUrl: ' '
   },
   {
-    id: 1115,
-    name: 'Sajal Howlader',
-    photoUrl: 'https://i.ibb.co/WB1qTd1/Sajal.jpg',
+    id: 1192787,
+    name: 'Sayma Rahman',
+    photoUrl: 'https://i.ibb.co/MCD2XxD/344605876-930466701555675-4399708039961909026-n.jpg',
     linkedinUrl: '',
     githuburl: ' ',
     portfolioUrl: ' '
-  },
-  {
-    id: 1116,
-    name: 'NAZMUL HASSAN',
-    photoUrl: 'https://i.ibb.co/g64cgyV/Nazmul.png',
-    linkedinUrl: '',
-    githuburl: ' ',
-    portfolioUrl: ' '
-  },
+  }, 
 
 ]
 
